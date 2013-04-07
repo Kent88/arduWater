@@ -1,0 +1,7 @@
+This arduino sketch is available with no warrenty implied whatsoever. I am not responsible if your stuff breaks because of this sketch, and it just might, because if you are using this sketch like I am then you are monitoring the flow of water using electronic components, which can cause issues if you aren't careful.
+
+This arduino sketch is adapted from the example sketch provided here: http://www.seeedstudio.com/wiki/G1/2_Water_Flow_sensor
+
+The main sketch is intended to be uploaded to an arduino, which will recieve information from a soil moisture sensor (so far it will just be two galvonized nails, but eventually I plan on buying a proper sensor that isn't as vulnerable to corrosion) (this has not been implemented yet), if the soil is too dry the arduino will open up a solenoid valve, allowing water to flow through the flow meter described in the previous seeedstudio wiki link, which will report back to the arduino the amount of water that has passed through during that watering, and after a predetermined amount has been dispensed, the solenoid valve will close for an hour. The arduino will also keep track of the amount of water dispensed from the cistern since it was last filled, and not allow water to be dispensed after the cistern gets too low. The end user is will be expected to reset the system when they refill the cistern.
+
+Other sketches will also be posted for component testing purposes.
